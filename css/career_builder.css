@@ -1,0 +1,509 @@
+/*do the clean up*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei UI;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/*top area style starts here*/
+.top{
+    position: fixed;
+    height: 50px;
+    line-height: 50px;
+    background-color:#07cbc9;
+    width: 100%;
+    z-index: 100;
+}
+
+.top .logo{
+    width: 160px;
+    margin: 10px 0 0 70px;
+}
+
+
+.top ul{
+    position: relative;
+    float: right;
+    margin-right: 50px;
+}
+
+.top ul li{
+    list-style: none;
+    float: left;
+    padding:0 3.5px;
+    font-size: 10px;
+    height: 50px;
+}
+
+.top ul li a{
+    color: white;
+}
+
+.top::after{
+    clear: both;
+}
+/*top area style ends here*/
+
+
+
+/*banner area style starts here*/
+.banner{
+    padding-top: 50px;
+    height: 350px;
+    background-color: black;
+}
+
+.banner img{
+    /*margin-top: 50px;*/
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: 0;
+    height: 350px;
+    opacity: 0.4;
+
+}
+
+/*Style for input text*/
+.banner .B-input{
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    margin-top: 60px;
+
+}
+
+.banner .B-input ul li input{
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    margin: 5px ;
+    width: 300px;
+    background-color: transparent;
+    color: rgba(201, 203, 201, 0.83);
+    border: 1.5px solid rgba(201, 203, 201, 0.83);
+    height: 8px;
+    padding: 10px;
+    font-size: 12px;
+    outline:none;
+}
+
+/*Style for multi text*/
+.banner .B-input ul li textarea{
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    margin: 8px ;
+    width: 300px;
+    background-color: transparent;
+    color: rgba(201, 203, 201, 0.83);
+    border: 1.5px solid rgba(201, 203, 201, 0.83);
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/*Style for submit button on the banner*/
+.banner .B-input ul li .submit{
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    margin: 5px ;
+    width: 110px;
+    background-color: transparent;
+    color: rgba(201, 203, 201, 0.83);
+    border: 1.5px solid rgba(201, 203, 201, 0.83);
+    height: 31px;
+    line-height: 31px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+
+/*The effect for focusing on text area and turning border to target color*/
+.banner .B-input ul li .singleText:hover{
+    border:1.5px solid #07cbc9;
+ }
+
+.banner .B-input ul li textarea:hover{
+    border:1.5px solid #07cbc9;
+}
+
+.banner .B-input ul li .submit:hover{
+    border:1.5px solid #07cbc9;
+}
+
+.banner .B-input ul li .submit{
+    outline:none;
+}
+
+/*Banner area style ends here*/
+
+
+/*About area style starts here*/
+.about{
+    height: 1100px;
+    padding-top: 75px;
+    position: relative;
+}
+
+.about .about-top{
+    text-align: center;
+    width: 400px;
+    margin:0 auto;
+}
+
+
+/*Dash under the title*/
+.about .about-top .title label{
+    background-color:#07cbc9;
+    display:block;
+    width: 30px;
+    height: 1px;
+    margin:15px auto;
+    padding: 0;
+    border: none;
+}
+
+
+.about .about-top span{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about .about-top .line{
+    border-bottom:2px solid #07cbc9 ;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.about .about-top p{
+    /*margin-top: 10px;*/
+    font-size: 15px;
+    color: rgb(138, 140, 138);
+    line-height: 20px;
+}
+
+
+.about .about-middle{
+    margin: 25px auto;
+    height: 330px;
+    width: 831px;
+
+}
+
+.about .about-middle .m-left{
+    float: left;
+    /*position: relative;*/
+    /*z-index: 10;*/
+}
+
+.about .about-middle .m-left span{
+    font-size: 25px;
+}
+
+
+/*The first line of the title on about-middle area*/
+.about .about-middle .m-left .s1{
+    display: block;
+    text-indent:20px;
+}
+
+.about .about-middle .m-left .s2{
+    display: block;
+    text-indent:10px;
+
+}
+
+.about .about-middle .m-left p{
+    font-size: 15px;
+    line-height: 20px;
+
+}
+
+/*The text area on the left side of about-middle area.*/
+.about .about-middle .sheet{
+    padding: 25px;
+    text-align: left;
+    position: absolute;
+    width: 320px;
+    top: 320px;
+    border: 1.5px solid lightgray;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.about .about-middle .sheet input{
+    display: inline-block;
+    width: 80px;
+    background-color: #000;
+    color: #FFF;
+    border: 1.5px solid #000;
+    height: 31px;
+    line-height: 31px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*The center picture for the middle about area.*/
+.about .about-middle .m-center{
+    float: left;
+    margin: 0 25px;
+}
+
+.about .about-middle .m-center img{
+    width: 450px;
+}
+
+
+.about .about-middle .m-right{
+    float: left;
+}
+
+.about .about-middle .m-right .sheet{
+    text-align: center;
+    border:1.5px solid #07cbc9;
+    padding: 20px 20px;
+    width: 150px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0px;
+}
+
+/*The dash underline*/
+.about .about-middle .m-right .sheet label{
+    background-color:#07cbc9;
+    display:block;
+    width: 30px;
+    height: 2px;
+    margin:15px auto;
+    padding: 0;
+    border: none;
+}
+
+
+
+.about .about-middle .m-right .sheet .s1{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.about .about-middle .m-right .sheet .s2{
+    font-size: 15px;
+}
+
+
+.about .about-bottom{
+    background-color:#07cbc9;
+    height:600px ;
+    width: 100%;
+}
+
+/*The style for image on the about-bottom area.*/
+
+.about .about-bottom .i{
+    width: 25%;
+    float: left;
+    height: 50%;
+}
+
+.about .about-bottom .i img{
+    width: 100%;
+    height: 100%;
+}
+
+/*The style for text on the about-bottom area.*/
+.about .about-bottom .t{
+    width: 25%;
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 50%;
+}
+
+.about .about-bottom .t .tt{
+    padding: 45px 25px 0 25px;
+}
+
+.about .about-bottom .t .tt .title{
+    color: #FFF;
+    font-size:20px ;
+}
+
+/*Style for the first paragraph*/
+.about .about-bottom .t .tt .p1{
+    color: #FFF;
+    font-size:15px ;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/*Style for the second paragraph*/
+.about .about-bottom .t .tt .p2{
+    color: rgb(220, 222, 220);
+    font-size: 12.5px ;
+    line-height: 17px;
+}
+
+/*Style for the "explore" button*/
+.about .about-bottom .t  input{
+    width: 80px;
+    background-color: #000;
+    color: #FFF;
+    border: 1.5px solid #000;
+    height: 31px;
+    line-height: 31px;
+    padding: 0;
+    font-size: 12.5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about .about-bottom .t .tt{
+    text-align: left;
+}
+
+
+/*Style for the small triangle on the first row image*/
+.about .about-bottom .left-triangle{
+    height: 0px;
+    width: 0px;
+    border-left: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #07cbc9;
+    z-index: 50;
+    float: left;
+    position: absolute;
+    left: -30px;
+    top: 119.6px;
+}
+
+/*Style for the small triangle on the second row image*/
+.about .about-bottom .right-triangle{
+    height: 0px;
+    width: 0px;
+    border-left: 15px solid #07cbc9;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    z-index: 50;
+    float: right;
+    position: absolute;
+    right: -30px;
+    top: 119.6px;
+}
+/*Style for About area ends here.*/
+
+
+/*Style for gallery area starts here*/
+.gallery{
+    height: 600px;
+    padding-top: 75px;
+}
+
+/*Text parts on the top of gallery*/
+.gallery .gallery-top{
+    text-align: center;
+    width: 400px;
+    margin:0 auto;
+}
+
+/*Dash underline*/
+.gallery .gallery-top .title label{
+    background-color:#07cbc9;
+    display:block;
+    width: 30px;
+    height: 1px;
+    margin:15px auto;
+    padding: 0;
+    border: none;
+}
+
+.gallery .gallery-top span{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+/*Dash underline*/
+.gallery .gallery-top .line{
+    border-bottom:2px solid #07cbc9 ;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+/*Text on the top area under the title"Gallery"*/
+.gallery .gallery-top p{
+    /*margin-top: 10px;*/
+    font-size: 15px;
+    color: rgb(138, 140, 138);
+    line-height: 20px;
+}
+
+
+
+
+.gallery .gallery-bottom{
+    width: 720px;
+    margin: 30px auto;
+}
+
+/*Big div for each row of image&text underneath*/
+.gallery .gallery-bottom .line1{
+    width: 100%;
+    margin: auto auto;
+    float: none;
+    height: 205px;
+}
+
+/*Small div for each box of image&text underneath*/
+.gallery .gallery-bottom .box{
+    /*height: 100px;*/
+    float: left;
+    position: relative;
+    margin: 10px;
+}
+
+
+.gallery .gallery-bottom .box .image-container{
+    height: 145px;
+}
+
+.gallery .gallery-bottom img{
+    width:220px;
+    height: 145px;
+}
+
+.gallery .gallery-bottom p{
+    background-color: #000;
+    color: #FFF;
+    /*margin-top: -3.9px;*/
+    height: 40px;
+    line-height: 40px;
+    font-size: 12.5px;
+    padding-left: 10px;
+}
+
+
+.footer{
+    height: 50px;
+    background-color: #07cbc9;
+    text-align: center;
+}
+
+.footer span{
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    font-size: 10px;
+}
+
+

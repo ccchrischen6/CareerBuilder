@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Career Builder</title>
+    <link rel="stylesheet" href="css/career_builder.css">
+    <script src="js/career_builder.js"></script>
+</head>
+<body>
+
+<!--The following block is for the top area.-->
+    <div class="top">
+        <img class="logo" src="images/logo.png">
+        <ul>
+            <li onmouseover='bgBlack(this, "#000")' onmouseleave='bgBlack(this, "#07cbc9")'><a href="#">HOME</a></li>
+            <li onmouseover='bgBlack(this, "#000")' onmouseleave='bgBlack(this, "#07cbc9")'><a href="#">ABOUT</a></li>
+            <li onmouseover='bgBlack(this, "#000")' onmouseleave='bgBlack(this, "#07cbc9")'><a href="#">GALLERY</a></li>
+            <li onmouseover='bgBlack(this, "#000")' onmouseleave='bgBlack(this, "#07cbc9")'><a href="#">FACULTY</a></li>
+            <li onmouseover='bgBlack(this, "#000")' onmouseleave='bgBlack(this, "#07cbc9")'><a href="#">EVENTS</a></li>
+            <li onmouseover='bgBlack(this, "#000")' onmouseleave='bgBlack(this, "#07cbc9")'><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+<!--Banner area-->
+    <div class="banner">
+        <img src="images/banner.jpg">
+        <div class="B-input">
+            <ul>
+                <li><input onfocus="textInit(this, 'your Name')" onfocusout="emptyReverse(this, 'your Name')" type="text" value="your Name" class="singleText" id=""></li>
+                <li><input onfocus="textInit(this, 'your Phone')" onfocusout="emptyReverse(this, 'your Phone')" type="text" value="your Phone" class="singleText" name="" id=""></li>
+                <li><input onfocus="textInit(this, 'your Email')" onfocusout="emptyReverse(this, 'your Email')" type="text" value="your Email" class="singleText" name="" id=""></li>
+                <li><textarea onfocus="textInit(this, 'Write Your Comment Here')" onfocusout="emptyReverse(this, 'Write Your Comment Here')">Write Your Comment Here</textarea>
+                <li><input onmouseover='bgBlack(this, "#07cbc9");fontColor(this, "#FFF")'
+                           onmouseleave='bgBlack(this, "transparent");fontColor(this, "rgba(201, 203, 201, 0.83)")'
+                           type="button" value="SEND MESSAGE" class="submit" name="" id=""></li>
+            </ul>
+        </div>
+    </div>
+
+
+<!--About area consists of three parts, top; middle; bottom-->
+    <div class="about">
+        <div class="about-top">
+            <div class="title">
+                <span>ABOUT</span>
+                <label class="line"></label>
+            </div>
+            <p>Island College is a private research university in Old York City.
+                Established in 1884 in Mantattan, Island College is the best institution of
+                higher education in the world and the fifth-oldest institution
+                of higher learning in the history of human beings.
+            </p>
+        </div>
+
+        <div class="about-middle">
+            <div class="m-left">
+                <span class="s1">A WORD</span>
+                <span class="s2">ABOUT US</span>
+            </div>
+            <div class="m-center">
+                <img src="images/bb3.jpg">
+            </div>
+            <div class="m-right">
+                <div class ="sheet">
+                    <span class="s1">70000</span>
+                    <label class="line"></label>
+                    <span class="s2">Students</span>
+                </div>
+                <div class ="sheet">
+                    <span class="s1">600</span>
+                    <label class="line"></label>
+                    <span class="s2">Faculty</span>
+                </div>
+            </div>
+
+            <div class="sheet">
+                <p>Island scientists and scholars have played an important role in the development
+                    of notable scientific fields and breakthroughs including: brain-computer interface;
+                    the laser and maser; nuclear magnetic resonance;
+                </p>
+                <input onmouseover='bgBlack(this, "transparent");fontColor(this, "#000")'
+                       onmouseleave='bgBlack(this, "#000");fontColor(this, "#FFF")'
+                       type="button" value="EXPLORE" class="submit" name="" id="">
+            </div>
+        </div>
+
+        <div class="about-bottom">
+            <div class="i">
+                <img src="images/b1.jpg">
+            </div>
+            <div class="t">
+                <div class="left-triangle"></div>
+                <div class="tt">
+                    <p class="title">Library</p>
+                    <p class="p1">Island College is a private research university in Old York City.</p><br>
+                    <p class="p2">Established in 1884 in Mantattan, Island College is the best institution
+                        of higher education in the world and the fifth-oldest institution of higher
+                        learning in the history of human beings.</p>
+                </div>
+                <input onmouseover='bgBlack(this, "transparent");fontColor(this, "#000")'
+                       onmouseleave='bgBlack(this, "#000");fontColor(this, "#FFF")'
+                       type="button" value="EXPLORE" class="submit" name="" id="">
+            </div>
+
+            <div class="i">
+                <img src="images/b2.jpg">
+            </div>
+            <div class="t">
+                <div class="left-triangle"></div>
+                <div class="tt">
+                    <p class="title">Computer Lab</p>
+                    <p class="p1">Island College is a private research university in Old York City.</p><br>
+                    <p class="p2">Established in 1884 in Mantattan, Island College is the best institution
+                        of higher education in the world and the fifth-oldest institution of higher
+                        learning in the history of human beings.</p>
+                </div>
+                <input onmouseover='bgBlack(this, "transparent");fontColor(this, "#000")'
+                       onmouseleave='bgBlack(this, "#000");fontColor(this, "#FFF")'
+                       type="button" value="EXPLORE" class="submit" name="" id="">
+            </div>
+
+            <div class="t">
+                <div class="right-triangle"></div>
+                <div class="tt">
+                    <p class="title">Conference Room</p>
+                    <p class="p1">Island College is a private research university in Old York City.</p><br>
+                    <p class="p2">Established in 1884 in Mantattan, Island College is the best institution
+                        of higher education in the world and the fifth-oldest institution of higher
+                        learning in the history of human beings.</p>
+                </div>
+                <input onmouseover='bgBlack(this, "transparent");fontColor(this, "#000")'
+                       onmouseleave='bgBlack(this, "#000");fontColor(this, "#FFF")'
+                       type="button" value="EXPLORE" class="submit" name="" id="">
+            </div>
+            <div class="i">
+                <img src="images/b3.jpg">
+            </div>
+
+            <div class="t">
+                <div class="right-triangle"></div>
+                <div class="tt">
+                    <p class="title">Play Ground</p>
+                    <p class="p1">Island College is a private research university in Old York City.</p><br>
+                    <p class="p2">Established in 1884 in Mantattan, Island College is the best institution
+                        of higher education in the world and the fifth-oldest institution of higher
+                        learning in the history of human beings.</p>
+                </div>
+                <input onmouseover='bgBlack(this, "transparent");fontColor(this, "#000")'
+                       onmouseleave='bgBlack(this, "#000");fontColor(this, "#FFF")'
+                       type="button" value="EXPLORE" class="submit" name="" id="">
+            </div>
+            <div class="i">
+                <img src="images/b4.jpg">
+            </div>
+        </div>
+    </div>
+
+
+<!--The following block is gallery.-->
+    <div class="gallery">
+        <div class="gallery-top">
+            <div class="title">
+                <span>GALLERY</span>
+                <label class="line"></label>
+            </div>
+            <p>Island College is a private research university in Old York City.
+                Established in 1884 in Mantattan, Island College is the best institution
+                of higher education in the world and the fifth-oldest institution of higher
+                learning in the history of human beings.
+
+
+            </p>
+        </div>
+
+        <div class="gallery-bottom">
+            <div class="line1">
+                <div class="box">
+                    <div class="image-container"><img src="images/03-01.jpg"></div>
+                    <p>SCIENCE LAB</p>
+                </div>
+                <div class="box">
+                    <div class="image-container"><img src="images/03-02.jpg"></div>
+                    <p>INDOOR STADIUM</p>
+                </div>
+                <div class="box">
+                    <div class="image-container"><img src="images/03-03.jpg"></div>
+                    <p>MUSIC CLASSES</p>
+                </div>
+            </div>
+
+            <div class="line1">
+                <div class="box">
+                    <div class="image-container"><img src="images/03-04.jpg"></div>
+                    <p>DORMITORY</p>
+                </div>
+                <div class="box">
+                    <div class="image-container"><img src="images/03-05.jpg"></div>
+                    <p>TRANSPORTATION</p>
+                </div>
+                <div class="box">
+                    <div class="image-container"><img src="images/03-06.jpg"></div>
+                    <p>DINNING HALL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--The last part, footer-->
+    <div class="footer">
+        <span>Copyright © 2020 ChrisChen. All Rights Reserved</span>
+    </div>
+
+</body>
+</html>
